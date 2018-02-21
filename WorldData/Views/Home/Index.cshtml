@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1>World Data!</h1>
+
+    <button type="submit" name="button"> <a href="/allcountries">List All Countries</a></button>
+<br>
+<button type="submit" name="button"> <a href="/allcities">List All Cities</a></button>
+    <br>
+    <br>
+    <hr>
+        <form action="/continent/filter" method="post">
+            <label for="continent">Filter by continent:</label>
+            <select id="continent" name="continent">
+                <option value="select">Select: </option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Asia">Asia</option>
+                <option value="Antarctica">Antarctica</option>
+            </select>
+            <button type="submit" name="button">Filter</button>
+        </form>
+</div>

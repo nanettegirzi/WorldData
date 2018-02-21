@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>World Data!</h1>
+<br>
+
+<a href="/"><button type="button" name="button">Go Home!</button></a>
+ <br>
+ <br>
+@foreach(var country in Model)
+{
+    <ul>
+        <li>@country.GetCountryName() | @country.GetCountryContinent()</li>
+    </ul>
+}

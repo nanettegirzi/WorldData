@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>World Data!</h1>
+<br>
+
+<h2>@Model.GetCountryName()</h2>
+<h3>Continent: @Model.GetCountryContinent()</h3>
+<h3>Population: @Model.GetCountryPopulation()</h3>
+<p>@foreach(var city in Model)
+{
+    <ul>
+        <li>@city.GetCityName()</li>
+    </ul>
+}</p>
+
+<a href="/"><button type="button" name="button">Go Home</button></a>

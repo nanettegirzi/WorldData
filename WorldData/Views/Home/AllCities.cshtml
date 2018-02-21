@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1>World Data!</h1>
+  <br>
+<button type="submit" name="button"> <a href="/">Go Home</a></button>
+      @foreach(var city in Model)
+      {
+          <ul>
+              <li>@city.GetCityName()</li>
+          </ul>
+      }
+
+
+</div>
